@@ -50,4 +50,5 @@
     <th>Action</th>
   </tfoot>
 </table>
+{{ $mahasiswa->links() }}
 @endsection
