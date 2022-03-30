@@ -1,7 +1,17 @@
 @extends('layouts.app')
 
 @section('content')
-<a href="{{ route('mahasiswa.create') }}" class="btn btn-primary mb-2">Input Mahasiswa</a>
+<div class="row">
+  <div class="col-md-2">
+    <a href="{{ route('mahasiswa.create') }}" class="btn btn-primary mb-2">Input Mahasiswa</a>
+  </div>
+  <div class="col-md justify-content-end">
+    <form class="d-flex">
+      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="name">
+      <button class="btn btn-outline-primary" type="submit">Search</button>
+    </form>
+  </div>
+</div>
 
 <!-- alert -->
 <div class="row mb-2">
